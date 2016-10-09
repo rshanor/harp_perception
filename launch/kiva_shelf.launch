@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<launch>
+
+    <node pkg="tf" type="static_transform_publisher" name="bin1_broadcaster" args="00.425 01.790 -0.006 3.141592653589793 0 -1.5707963267948966 /shelf /bin_A 100" />
+    <node pkg="tf" type="static_transform_publisher" name="bin2_broadcaster" args="00.149 01.790 -0.006 3.141592653589793 0 -1.5707963267948966 /shelf /bin_B 100" />
+    <node pkg="tf" type="static_transform_publisher" name="bin3_broadcaster" args="-0.155 01.790 -0.006 3.141592653589793 0 -1.5707963267948966 /shelf /bin_C 100" />
+
+    <node pkg="tf" type="static_transform_publisher" name="bin4_broadcaster" args="00.425 01.527 -0.006 3.141592653589793 0 -1.5707963267948966 /shelf /bin_D 100" />
+    <node pkg="tf" type="static_transform_publisher" name="bin5_broadcaster" args="00.149 01.527 -0.006 3.141592653589793 0 -1.5707963267948966 /shelf /bin_E 100" />
+    <node pkg="tf" type="static_transform_publisher" name="bin6_broadcaster" args="-0.155 01.527 -0.006 3.141592653589793 0 -1.5707963267948966 /shelf /bin_F 100" />
+
+    <node pkg="tf" type="static_transform_publisher" name="bin7_broadcaster" args="00.425 01.290 -0.006 3.141592653589793 0 -1.5707963267948966 /shelf /bin_G 100" />
+    <node pkg="tf" type="static_transform_publisher" name="bin8_broadcaster" args="00.149 01.290 -0.006 3.141592653589793 0 -1.5707963267948966 /shelf /bin_H 100" />
+    <node pkg="tf" type="static_transform_publisher" name="bin9_broadcaster" args="-0.155 01.290 -0.006 3.141592653589793 0 -1.5707963267948966 /shelf /bin_I 100" />
+
+    <node pkg="tf" type="static_transform_publisher" name="bin10_broadcaster" args="00.425 01.066 -0.006 3.141592653589793 0 -1.5707963267948966 /shelf /bin_J 100" />
+    <node pkg="tf" type="static_transform_publisher" name="bin11_broadcaster" args="00.149 01.066 -0.006 3.141592653589793 0 -1.5707963267948966 /shelf /bin_K 100" />
+    <node pkg="tf" type="static_transform_publisher" name="bin12_broadcaster" args="-0.155 01.066 -0.006 3.141592653589793 0 -1.5707963267948966 /shelf /bin_L 100" />
+
+</launch>

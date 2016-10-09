@@ -1,0 +1,64 @@
+planningTime: 5.0
+#plannerId: "RRTstarkConfigDefault"
+#plannerId: "RRTkConfigDefault"
+#plannerId: "RRTConnectkConfigDefault"
+#plannerId: "LARA*"
+plannerId: "ompl.RRTConnectkConfigDefault"
+#plannerId: "sbpl.LARA*"
+#baseCollisionModel: "ur5_mounting_frame_collision_object_export.stl"
+baseCollisionModel: "ur5_mounting_frame_collision_object_large.STL"
+#shelfCollisionModel: "nineBinShelf_moreDense.STL"
+shelfCollisionModel: "pod_modified.stl"
+orderBinCollisionModel: "bin_collision_object_blender.STL"
+mas_user_input_override: false
+
+learningMode: 0
+
+base_col_x: 0 # for old model: -0.55677
+base_col_y: 0 # for old model: -0.55677
+base_col_z: 0.0
+
+
+
+x_min_pad: 0.05
+x_max_pad: 0.25
+
+y_min_pad: 0.05
+y_max_pad: 0.25
+
+z_min_pad: 0.05
+z_max_pad: 0.35
+
+cartesian_velocity_scale_factor: 0.75
+sbpl_velocity_scale_factor: 1.0
+ompl_velocity_scale_factor: 0.5
+
+stowage_bin_max_x: 0.39
+stowage_bin_max_y: 0.25
+stowage_bin_max_z: 0.31
+
+currentBin: "bin_A"
+
+ob_collision_pos_x: -0.2
+ob_collision_pos_y: -1.0
+ob_collision_pos_z: 0.75
+ob_collision_rot_x: 0
+ob_collision_rot_y: 0
+ob_collision_rot_z: 0
+ob_collision_rot_w: 1.0
+
+/move_group/ompl/maximum_waypoint_distance: 0.1
+
+#Tiled up:
+#ob_collision_rot_x: -0.247
+#ob_collision_rot_y: 0
+#ob_collision_rot_z: 0
+#ob_collision_rot_w: 0.9689
+
+move_group/target_point_offset_x: 0.58
+move_group/target_point_offset_y: 0.0
+move_group/target_point_offset_z: 0.13
+move_group/jiggle_fraction: 0.001
+
+cartesianJump: 2.0
+cartesianStep: 0.1

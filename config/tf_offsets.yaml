@@ -1,0 +1,139 @@
+# UR5 base offset
+base_pos_x: 0.0
+base_pos_y: 0.0
+base_pos_z: 0.0
+
+# Kinect offset
+kinect_reference_frame: 'gripper_link'
+# calibration performed 3/6
+kinect_pos_x: -0.088
+kinect_pos_y: 0.13
+kinect_pos_z: -0.002
+kinect_rot_x: -0.014114
+kinect_rot_y: 0.712249
+kinect_rot_z: 0.701776
+kinect_rot_w: 0.003641
+
+#kinect_pos_x: -0.095 // first manual calibration
+#kinect_pos_y: 0.095
+#kinect_pos_z: -0.049
+#kinect_rot_x: -0.005347
+#kinect_rot_y: 0.703543
+#kinect_rot_z: 0.710578
+#kinect_rot_w: 0.008812
+
+#Static Shelf offset
+shelf_reference_frame: 'map'
+shelf_pos_x: 1.3
+shelf_pos_y: 0.00
+shelf_pos_z: 0.0
+shelf_roll: 1.5707963267948966
+shelf_pitch: 0
+shelf_yaw: 1.5707963267948966
+
+# wrt to the global frame
+shelf_trans_x: 1.3
+shelf_trans_y: 0.0
+shelf_trans_z: 0.0
+
+# Initialize shelf for bin localization
+bin_trans_x: 0.0
+bin_trans_y: 0.2
+bin_trans_z: 0.9
+bin_pos_x: 0.2
+bin_pos_y: -0.75
+bin_pos_z: 1.30
+bin_roll: -1.6521964150130337
+bin_pitch: 1.473769730721413
+bin_yaw: -2.039906807571996
+
+# Collision Object for sbpl
+co_pos_x: -0.5
+co_pos_y: 0.0
+co_pos_z: 0.0
+
+co_size_x: .5
+co_size_y: .05
+co_size_z: 1
+
+# Frame (item)
+item_reference_frame: "map"
+item_pos_x: 0.0
+item_pos_y: 0.0
+item_pos_z: 0.0
+item_roll: 0.0
+item_pitch: 0.0
+item_yaw: 0.0
+
+# Frame (grasp)
+grasp_pos_x: 0.0
+grasp_pos_y: 0.0
+grasp_pos_z: 0.0
+grasp_rot_x: 0.0
+grasp_rot_y: 0.0
+grasp_rot_z: 0.0
+grasp_rot_w: 1.0
+
+# Frame (grasp_old)
+grasp_old_pos_x: 0.0
+grasp_old_pos_y: 0.0
+grasp_old_pos_z: 0.0
+grasp_old_rot_x: 0.0
+grasp_old_rot_y: 0.0
+grasp_old_rot_z: 0.0
+grasp_old_rot_w: 1.0
+
+# Frame (MAS_command)
+command_pos_x: 0.0
+command_pos_y: 0.0
+command_pos_z: 0.0
+command_rot_x: 0.0
+command_rot_y: 0.0
+command_rot_z: 0.0
+command_rot_w: 1.0
+
+#Frame (gripper_link) for SBPL
+gl_reference_frame: 'wrist_3_link'
+gl_pos_x: 0
+gl_pos_y: 0.0823
+gl_pos_z: 0
+gl_rot_x: 0
+gl_rot_y: 0
+gl_rot_z: 0
+gl_rot_w: 1
+
+#Frame (scl_frame) for SBPL
+scl_reference_frame: 'ee_link'
+scl_pos_x: 0.58
+scl_pos_y: 0.0
+scl_pos_z: 0.13
+scl_roll: 0
+scl_pitch: 0 #-1.5708
+scl_yaw:  0 #3.14159
+
+#Frame (eet_desired) for SBPL
+eet_reference_frame: 'MAS_command'
+eet_pos_x: -0.13
+eet_pos_y: 0.0
+eet_pos_z: -0.58
+eet_roll: 3.14159
+eet_pitch: -1.5708
+eet_yaw: 0
+
+# Frame (dropoff)
+dropoff_reference_frame: "map"
+dropoff_pos_x: 0.2
+dropoff_pos_y: -0.75
+dropoff_pos_z: 0.8
+dropoff_roll: 0
+dropoff_pitch: 1.9
+dropoff_yaw: -0.3
+
+# Frame GP
+GP_pos_x: 0
+GP_pos_y: 0
+GP_pos_z: 0
+GP_rot_x: 0
+GP_rot_y: 0
+GP_rot_z: 0 
+GP_rot_w: 1

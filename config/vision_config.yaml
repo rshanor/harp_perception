@@ -1,0 +1,60 @@
+shelfModelPCD: "pod_modified.pcd"
+logPerceptionData: 0
+remove_shelf_delta: 0.02
+#xmin_scale: 1.7
+#xmax_scale: -1.7
+#ymin_scale: 1.0
+#ymax_scale: -1.0
+#zmin_scale: 2.5
+#zmax_scale: -0.2
+# remove shelf node/server params
+ymax_scale: 1
+ymin_scale: -2
+xmin_scale: 1
+xmax_scale: 1
+zmax_scale: -3
+zmin_scale: 1
+# mask parameter
+mask_x_delta: .02
+mask_y_delta: 0.0
+mask_z_delta: .02
+
+geometry_filter_dx_min: 0.01
+geometry_filter_dx_max: 0.01
+geometry_filter_dy_min: 0.035
+geometry_filter_dy_max: -0.05
+geometry_filter_dz_min: 0.1
+geometry_filter_dz_max: -0.1
+
+# Run PERCH on robot for select items
+run_perch_on_robot: 0
+
+# CAFFE path variables
+caffe_root: "/home/rshanor/src/caffe/"
+#caffe_root: "/home/harp/src/caffe/"
+
+# Path inside APC directory
+#alexnet_prototxt: "/models/caffe/id_cnn/deploy_superpix_39_item.prototxt"
+alexnet_prototxt: "/models/caffe/deploy_superpix.prototxt"
+# Path inside APC directory
+alexnet_weights: "/models/caffe/id_20160412.caffemodel" 
+
+# Test path
+dataset_path: "/home/rshanor/harp_ws/src/harp_apc/harp_perception/data/" 
+
+# Turn on/off different algorithms
+test_perch: 1
+test_cnn: 0
+
+# Set this flag to save resulting masked images
+save_resulting_images: 1
+
+# CNN Runtime Parameters
+neighbor_weight: .75 # How much neighbors are weighed relative to center
+# Currently not using max_expansion_distance
+# Implement later in picking perception utils
+max_expansion_distance: 1 # Distance from optimal node we can label 
+success_threshold: 0.005 # Minimum score to label neighbor
+run_global_optimization: 1
+
+use_geometry_mask: 1

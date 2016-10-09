@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<launch>
+
+  <!-- Configuration Parameters -->
+  <rosparam command="load" file="$(find harp_perception)/config/item_dictionary.yaml" />
+  <rosparam command="load" file="$(find harp_perception)/config/vision_config.yaml" />
+
+  <!-- Environment Modelling -->
+  <include file="$(find harp_picking)/launch/setup_environment.launch"/>
+  <include file="$(find harp_perception)/launch/kiva_shelf.launch"/>
+
+  <!-- For CNN ID --> 
+<!--   <node pkg="harp_perception" type="depth_image_smoother" name="depth_image_smoother" output="screen"/> -->
+  <node pkg="harp_perception" type="geometry_filter_server" name="geometry_filter_server" output="screen"/>
+  
+</launch>
